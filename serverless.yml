@@ -1,0 +1,43 @@
+service: nextjs
+
+stage: ${env.STAGE}
+
+stages:
+  dev:
+    domain: xxxxxxxxxxxxxx.cloudfront.net
+    region: ap-northeast-1
+    applicationBucketName: nextjs-dev-web-application
+  prod:
+    domain: xxxxxxxxxxxxxx.cloudfront.net
+    region: ap-northeast-1
+    applicationBucketName: nextjs-web-application
+
+name: nextjs
+
+nextApp:
+  component: "@sls-next/serverless-component@1.19.0-alpha.13"
+  inputs:
+#    domain: ${stages.${stage}.domain}
+    stage: ${stage}
+    deploy: true
+    bucketName: ${stages.${stage}.applicationBucketName}
+    bucketRegion: ${stages.${stage}.region}
+    region: ${stages.${stage}.region}
+    runtime: nodejs12.x
+    memory: 2048
+    timeout: 30
+    name: nextjs-application
+    # cloudfront:
+    #  # CI Will create a new distribution on every deploy. Provide distribution id here to reuse
+    #  distributionId: FOO
+    build:
+      env:
+        APP_URL: ${stages.${stage}.domain}
+      postBuildCommands: ["node post-build.js"]
+
+plugins:
+  - serverless-plugin-chrome
+
+package:
+  exclude:
+    - node_modules/puppeteer/.local-chromium/**

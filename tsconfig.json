@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2015",
+    "jsx": "preserve",
+    "lib": ["dom", "es2015"],
+    "strict": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "noUnusedLocals": false,
+    "allowJs": true,
+    "baseUrl": "src",
+    "skipLibCheck": true,
+    "paths": {
+      "@/*": ["*"]
+    },
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true
+  },
+  "exclude": ["node_modules", "public", ".cache"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/_app.js"]
+}

@@ -1,0 +1,9 @@
+.cache
+.next
+.serverless
+.serverless_nextjs
+node_modules
+package.json
+package-lock.json
+public
+ssl
