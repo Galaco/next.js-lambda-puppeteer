@@ -1,8 +1,6 @@
 import { stringType } from 'aws-sdk/clients/iam';
 import puppeteer, { Page, Browser, Viewport } from 'puppeteer';
-import {
-  makeScreenshot,
-} from '@/Services/HtmlToImage/screenshot';
+import { makeScreenshot } from '@/Services/HtmlToImage/screenshot';
 
 export const generateImage = async (): Promise<string | null> => {
   let browserInstance;
@@ -17,9 +15,7 @@ export const generateImage = async (): Promise<string | null> => {
         height: 512,
         deviceScaleFactor: 1,
       },
-      `http://${
-        process.env.APP_URL
-      }/image/example`
+      `http://${process.env.APP_URL}/image/example`
     );
 
     await closeInstance(browserInstance);
@@ -54,8 +50,6 @@ const takeScreenshot = async (
 
   return buffer;
 };
-
-
 
 let chromium: any;
 
