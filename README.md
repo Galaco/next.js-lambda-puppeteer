@@ -1,4 +1,4 @@
-# Next.js 10 Puppeteer
+# Next.js 10 AWS Lambda Puppeteer
 
 A Next.js 10 application template that includes Puppeteer and chrome-aws-lambda. This application is a simple showcase of how to setup chrome-aws-lambda using puppeteer, and an example api route that screenshots another page and returns it as the response body.
 
