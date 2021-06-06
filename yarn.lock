@@ -6182,7 +6182,14 @@ klona@^2.0.4:
   resolved "https://registry.yarnpkg.com/klona/-/klona-2.0.4.tgz#7bb1e3affb0cb8624547ef7e8f6708ea2e39dfc0"
   integrity sha512-ZRbnvdg/NxqzC7L9Uyqzf4psi1OM4Cuc+sJAkQPjO6XkQIJTNbfK2Rsmbw8fx1p2mkZdp2FZYo2+LwXYY/uwIA==
 
-lambdafs@^2.0.0, lambdafs@^2.0.1:
+lambdafs@2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/lambdafs/-/lambdafs-2.0.3.tgz#f2acc53cf4862d29f1df654c327864b4faeb1d4a"
+  integrity sha512-5YWwZA/QKk09GdfcJ/ABVO+bpFoGlnTBa5jmyM8Kt9yIzl2lDDVBPLK+Aenq2UEcuDpqxXIYI5zLB7VZNepTrg==
+  dependencies:
+    tar-fs "^2.1.1"
+
+lambdafs@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/lambdafs/-/lambdafs-2.0.1.tgz#ddbee479e8e204dc17f1a43307ec3ae1df9ea485"
   integrity sha512-RNb7Si2XPvU6pPiE6S0eDfH1W3n+OQaxpclSPJD0hnNFA5z+U1Ntr4sgUEE9xSxVu932ufh1iwtBcIxpEM9bOw==
