@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@sls-next/serverless-component": "=1.19.0-alpha.13",
-    "aws-sdk": "^2.804.0",
+    "aws-sdk": "2.1087.0",
     "chrome-aws-lambda": "^5.5.0",
     "lambdafs": "^2.0.1",
     "next": "10.0.3",
