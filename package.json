@@ -17,7 +17,7 @@
     "aws-sdk": "2.1087.0",
     "chrome-aws-lambda": "^5.5.0",
     "lambdafs": "2.1.1",
-    "next": "10.0.3",
+    "next": "12.1.0",
     "puppeteer": "^5.5.0",
     "puppeteer-core": "^5.5.0",
     "react": "17.0.2",
