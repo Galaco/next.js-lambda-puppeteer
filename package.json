@@ -13,7 +13,7 @@
     "deploy-dev": "ENV stage=dev serverless"
   },
   "dependencies": {
-    "@sls-next/serverless-component": "=1.19.0-alpha.13",
+    "@sls-next/serverless-component": "=1.19.0",
     "aws-sdk": "2.1087.0",
     "chrome-aws-lambda": "^5.5.0",
     "lambdafs": "2.1.1",
